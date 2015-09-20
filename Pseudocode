@@ -1,0 +1,6 @@
+Variable a,b,c
+Diskriminan B^2-4AC/2A
+if Diskriminan <0 akar imajiner
+If Diskriminan =0 x1= -b/2a x2= x1
+If Diskriminan >0 x1= -b+√B^2-4AC/2A x2= -b-√B^2-4AC/2A
+print( x1 , x2 )
