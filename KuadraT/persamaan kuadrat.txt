@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a,b,c,D,x1,x2;
+   printf("NAMA : Rochmat Heru Kurniawan \n");
+   printf("NIM : D400150084 \n");
+   printf("masukan nilai a = "); scanf("%f", &a);
+   if (a==0) {
+    printf("erorr!!");
+   }
+   else {
+   printf("masukan nilai b = "); scanf("%f", &b);
+   printf("masukan nilai c = "); scanf("%f", &c);
+   D=(b*b)-(4*a*c);
+   printf("nilai determinan = %.2f\n\n", D);
+
+   if (D<0) {
+    printf("bilangan imajiner\n\n");
+   }
+   else if (D==0) {
+    x1= -b/2*a;
+    printf("hasil x1 = x2 = %.2f\n\n", x1);
+   }
+   else {
+    x1=(-b+sqrt(D))/(2*a);
+    x2=(-b-sqrt(D))/(2*a);
+    printf("hasil x1 = %.2f\n", x1);
+    printf("hasil x2 = %.2f\n\n", x2);
+   }
+   }
+}
